@@ -280,16 +280,6 @@ MarkdownView(text: source, listener: AnalyticsListener())
 The listener is propagated through the SwiftUI environment, so deeply nested
 rendered subviews observe the same hooks.
 
-### Image viewer transitions
-
-On iOS 18 and later, tapping an image opens the built-in fullscreen viewer with
-a native zoom transition from that specific image occurrence. Dismissal zooms
-back to the same occurrence, even when a resource appears more than once.
-At minimum image zoom, the system handles interactive dismissal; while zoomed
-or pinching, gestures remain available for inspecting the image. No host-provided
-viewer or transition source is required. iOS 16 and 17 retain the existing
-fullscreen presentation and swipe-to-dismiss behavior.
-
 ## Sample app
 
 A SwiftUI sample app lives in
